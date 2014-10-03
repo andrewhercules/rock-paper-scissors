@@ -1,0 +1,10 @@
+Feature: Starting the game
+	In order to play Rock, Paper, Scissors
+	As a member of the Makers Academy Marketing Array
+	I want to start a new game
+
+
+	Scenario: Registering
+		Given I am on the homepage
+		When I click "Play Game"
+		Then I should see "Player 1, please enter your name!"
