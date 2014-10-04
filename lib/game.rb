@@ -1,11 +1,10 @@
 class Game
 
-	attr_accessor :player1, :player2
+	attr_accessor :player1
 	attr_reader :player_selection, :computer_selection
 
 	def initialize
 		player1 = nil
-		player2 = nil
 		@player_selection = nil
 		@computer_selection = nil
 	end
@@ -29,11 +28,11 @@ class Game
 			"scissors" => "paper"
 		}
 		if player_selection == computer_selection
-			"Draw"
+			"draw"
 		elsif game_scenarios[player_selection] == computer_selection
-			"You win!"
+			"win"
 		else
-			"You lose!"
+			"lose"
 		end
 	end
 

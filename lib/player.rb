@@ -1,10 +1,9 @@
 class Player
 
-	attr_reader :name, :win_count, :selection
+	attr_accessor :name, :selection
 
-	def initialize(name)
+	def initialize(name = nil)
 		@name = name
-		@win_count = nil
 		@selection = nil
 	end
 

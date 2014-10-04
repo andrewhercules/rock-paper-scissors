@@ -29,7 +29,6 @@ class RockPaperScissors < Sinatra::Base
 	end
 
 	get '/newgame' do
-		@player_name = params[:player_1]
 		erb :newgame
 	end
 
@@ -37,8 +36,11 @@ class RockPaperScissors < Sinatra::Base
 		player_selection = params[:player_selection]
 		PLAYER.make_selection(player_selection)
 		GAME.accept_player_selection(PLAYER)
+		GAME.accept_computer_selection
+		computer_selection = GAME.computer_selection
+		@game_result = GAME.determine_winner(player_selection, computer_selection)
 		puts GAME.inspect
-    "Result page goes here!"
+		erb :result
   end
 
 
