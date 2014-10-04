@@ -8,7 +8,6 @@ describe Game do
 
 	it "should start with no Players" do
 		expect(game.player1).to eq (nil)
-		expect(game.player2).to eq (nil)
 	end	
 
 	it "should add one Player from the Makers Academy Marketing Array team" do
@@ -28,15 +27,15 @@ describe Game do
 	end
 
 	it "should determine if the Player won" do
-		expect(game.determine_winner("rock", "scissors")).to eq "You win!"
+		expect(game.determine_winner("rock", "scissors")).to eq "win"
 	end
 
 	it "should determine if the Player has lost" do
-		expect(game.determine_winner("rock", "paper")).to eq "You lose!"
+		expect(game.determine_winner("rock", "paper")).to eq "lose"
 	end
 
 	it "should determine if there is a draw" do
-		expect(game.determine_winner("rock", "rock")).to eq "Draw"
+		expect(game.determine_winner("rock", "rock")).to eq "draw"
 	end
 
 end
