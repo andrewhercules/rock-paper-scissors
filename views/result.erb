@@ -1,0 +1,20 @@
+Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %><br />
+
+
+<% if @game_result=="draw" %>
+You drew even! Why not <a href="/newgame">try again</a>?
+
+<%elsif @game_result=="win" %>
+Congratulations, you won! Want to <a href="/newgame">try your luck again</a>?
+
+<%elsif @game_result=="lose" %>
+Sorry, you lost! But don't despair, <a href="/newgame">try again</a>?
+
+<% end %> 
+
+
+Click the button below to return to the homepage:<br />
+
+  <form action='/reset_game' method='post'>
+  <input type='submit' value='Quit'>
+  </form>
