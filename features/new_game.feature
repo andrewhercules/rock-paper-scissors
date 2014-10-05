@@ -5,7 +5,7 @@ Feature: Starting the game
 
 	Scenario: Registering
 		Given I am on the homepage
-		When I click "Play Game"
+		When I click "PLAY GAME"
 		Then I should see "Player 1, please enter your name!"
 
 	Scenario: Entering name
