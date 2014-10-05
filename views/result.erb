@@ -1,4 +1,15 @@
-Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %><br />
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	</head>
+
+
+
+
+<p>Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %></p>
+
+<br />
 
 
 <% if @game_result=="draw" %>
@@ -18,3 +29,5 @@ Click the button below to return to the homepage:<br />
   <form action='/reset_game' method='post'>
   <input type='submit' value='Quit'>
   </form>
+
+</html>
