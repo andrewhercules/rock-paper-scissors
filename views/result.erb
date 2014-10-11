@@ -4,30 +4,26 @@
 		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 	</head>
 
+	<body>
 
+		<% if @game_result=="draw" %>
+			<h3>You drew even!<br /><a href="/newgame">Play again!</a></h3>
+		<%elsif @game_result=="win" %>
+			<h3>Congratulations, you won!<br /><a href="/newgame">Play again!</a></h3>
+		<%elsif @game_result=="lose" %>
+			<h3>Sorry, you lost!<br /><a href="/newgame">Play again!</a></h3>
+		<% end %>
 
+		<p>Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %></p><br />
+		
+			<form action='/reset_game' method='post'>
+			<input type='submit' value='Quit'>
+			</form>
 
-<p>Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %></p>
+			<form action='/newgame'>
+			<input type='submit' value='New Game'>
+			</form>
 
-<br />
-
-
-<% if @game_result=="draw" %>
-You drew even! Why not <a href="/newgame">try again</a>?
-
-<%elsif @game_result=="win" %>
-Congratulations, you won! Want to <a href="/newgame">try your luck again</a>?
-
-<%elsif @game_result=="lose" %>
-Sorry, you lost! But don't despair, <a href="/newgame">try again</a>?
-
-<% end %> 
-
-
-Click the button below to return to the homepage:<br />
-
-  <form action='/reset_game' method='post'>
-  <input type='submit' value='Quit'>
-  </form>
+	</body>
 
 </html>
