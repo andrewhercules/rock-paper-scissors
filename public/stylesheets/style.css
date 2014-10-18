@@ -10,7 +10,7 @@
 	}
 
 	h3 {
-		font-size: 3em;
+		font-size: 2em;
 		font-family: 'American Typewriter', monospace;
 		color: rgb(235,114,96);
 		text-align: center;
@@ -43,7 +43,5 @@
 	    position: relative;
 	    top: -25px;
 	}
-
-/*player registration page styles */
 
 
