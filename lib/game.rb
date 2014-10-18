@@ -3,12 +3,6 @@ class Game
 	attr_accessor :player1
 	attr_reader :player_selection, :computer_selection
 
-	def initialize
-		player1 = nil
-		@player_selection = nil
-		@computer_selection = nil
-	end
-
 	def add_player(player)
 		self.player1 = player
 	end

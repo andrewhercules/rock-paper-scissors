@@ -21,9 +21,7 @@ describe Game do
 	end
 
 	it "should accept selections generated randomly by the Computer" do
-		allow(game).to receive(:selection).and_return("paper")
-    	expect(game.accept_computer_selection).to eq "paper" 
-		# expect(game).to receive(:accept_computer_selection).and_return(:computer_selection)
+		 expect(["rock","paper","scissors"]).to include(game.accept_computer_selection)
 	end
 
 	it "should determine if the Player won" do
