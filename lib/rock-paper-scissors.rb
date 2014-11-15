@@ -21,13 +21,13 @@ class RockPaperScissors < Sinatra::Base
 
 	post '/player' do
 		player_name = params[:player_1]
-	    PLAYER = Player.new(player_name)
-	    PLAYER.name = player_name
-	    session[:me] = PLAYER
-	    GAME.add_player(PLAYER)
-	    puts GAME.inspect
-	  	erb :player
-	  	redirect '/newgame' 
+    PLAYER = Player.new(player_name)
+    PLAYER.name = player_name
+    session[:me] = PLAYER
+    GAME.add_player(PLAYER)
+    puts GAME.inspect
+  	erb :player
+  	redirect '/newgame' 
 	end
 
 	get '/newgame' do

@@ -4,7 +4,7 @@ Feature: Playing the game
 	I have already registered
 	I want to start a new game
 
-	Scenario:
+	Scenario: Playing the game
 		Given I am on the game page
 		When I select "paper"
 		And when computer player has selected
