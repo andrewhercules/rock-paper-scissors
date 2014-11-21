@@ -1,13 +1,65 @@
-	body {
-	    background-color: rgb(233,224,214);
-	}
+body {
+	background-color: rgb(233,224,214);
+}
 
-	h1 {
-		font-size: 6em;
-		font-family: 'American Typewriter', monospace;
-		color: rgb(235,114,96);
-		text-align: center;
-	}
+#homepage-main-image {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -35px;
+}
+
+#player-name-form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
+}
+
+#player-name-form-button {
+	width: 200px;
+	float: right;
+	margin-top: 12px;
+}
+
+section#player-selection {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+
+form input[type=text] {
+	font-family: 'American Typewriter', monospace;
+  border: 1px;
+  font-size: 2em;
+  width: 60%;
+  height: 10%;
+  display: inline;
+  padding: 10px;
+  border-radius: 6px;
+  border: 3px solid black;
+}
+
+h1 {
+	font-size: 6em;
+	font-family: 'American Typewriter', monospace;
+	color: rgb(235,114,96);
+	text-align: center;
+}
+
+h2 {
+
+	font-size: 4em;
+	font-family: 'American Typewriter', monospace;
+	color: rgb(235,114,96);
+	text-align: center;
+}
 
 	h3 {
 		font-size: 2em;
@@ -21,27 +73,14 @@
 		font-family: 'American Typewriter', monospace;
 		color: rgb(235,114,96);
 	}
+a:visited { 
+    background-color: yellow;
+}
 
-	a {
-		display: block;
-	}
-
-/*-- homepage styles */
-
-	#homepage-main-image {
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    position: relative;
-	    top: -50px;
-	}
-
-	#homepage-button {
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    position: relative;
-	    top: -25px;
-	}
+button {
+	border: 0;
+	margin: 0 20px;
+	background-color: rgb(233,224,214);
+}
 
 

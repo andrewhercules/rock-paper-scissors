@@ -7,11 +7,11 @@
 	<body>
 
 		<% if @game_result=="draw" %>
-			<h3>You drew even!<br /><a href="/newgame">Play again!</a></h3>
-		<%elsif @game_result=="win" %>
-			<h3>Congratulations, you won!<br /><a href="/newgame">Play again!</a></h3>
-		<%elsif @game_result=="lose" %>
-			<h3>Sorry, you lost!<br /><a href="/newgame">Play again!</a></h3>
+			<h2>It's a draw!<a href="/newgame">Play again!</a></h2>
+		<% elsif @game_result=="win" %>
+			<h2>Congratulations, you won!<a href="/newgame">Play again!</a></h2>
+		<% elsif @game_result=="lose" %>
+			<h2>Sorry, you lost!<a href="/newgame">Play again!</a></h2>
 		<% end %>
 
 		<p>Your choice was <%= GAME.player_selection.capitalize %> and the computer selected <%=GAME.computer_selection.capitalize %></p><br />

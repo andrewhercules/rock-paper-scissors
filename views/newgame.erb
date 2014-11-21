@@ -6,18 +6,19 @@
 
 	<body>
 
-		<p> Hello <%= PLAYER.name %>! Please make your selection.</p><br />
+		<h2> Hello <%= PLAYER.name %>!</h2><h3>Please make your selection.</h3><br />
 
-		<form action="/result" method="post">
-			<input type="radio" name="player_selection" id="rock" value="rock"  /><img id="newgame-rock" src="/images/rock.png" width="300" alt="Graphic of a rock">
-			<input type="radio" name="player_selection" id="paper" value="paper" /><img id="newgame-paper" src="/images/paper.png" width="300" alt="Graphic of a piece of paper">
-			<input type="radio" name="player_selection" id="scissors" value="scissors" /><img id="newgame-scissors" src="/images/scissors.png" width="300" alt="Graphic of a pair of scissors">
+		<section id="player-selection">
 
-			
-			
-			
+			<form action="/result" method="post" id="player_choice">
 
-			<input type="submit" name="Play" value="Play" />
+			<button type="submit" name="player_selection" value="rock"><img src="/images/rock.png" width="300"></button>
+
+			<button type="submit" name="player_selection" value="paper"><img src="/images/paper.png" width="300"></button>
+
+			<button type="submit" name="player_selection" value="scissors"><img src="/images/scissors.png" width="300"></button>
+
+		</section>
 
 		</form>
 
