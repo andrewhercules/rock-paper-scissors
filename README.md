@@ -10,6 +10,7 @@ After spending three weeks learning about Ruby, we were asked to make a simple R
 * Rspec
 * Cucumber
 * Sinatra
+* HTML/CSS
 
 ### Learning Outcomes
 
@@ -19,7 +20,7 @@ With this project, I also appreciated using Cucumber and developing my applicati
 
 ### To-do List
 
-- [ ] Update CSS
+- [X] Update CSS
 - [ ] Add jQuery to make game interactive
 - [ ] Make HTML/CSS responsive for use on other devices
 
